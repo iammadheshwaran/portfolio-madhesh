@@ -28,7 +28,7 @@ import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
 
 const aboutStats = [
-  { label: "Years of experience", value: "3+" },
+  { label: "Years of experience", value: "+" },
   { label: "Technologies mastered", value: "5+" },
   { label: "Companies worked with", value: "15+" },
 ];
@@ -38,32 +38,14 @@ const projects = [
     title: "Unqueue",
     description: "E-commerce platform for selling digital products",
     image: "/assets/unqueue.webm",
-    href: "https://unqueue.shop/",
+    href: " ",
   },
   {
-    title: "InfiniteVPS",
-    description: "High performance VPS hosting solution",
-    image: "/assets/infinitevps.webm",
-    href: "#",
-  },
-  {
-    title: "TranslateBot",
-    description: "Powerful Multilingual Translation Bot for Discord",
-    image: "/assets/translate_bot.webm",
-    href: "https://translatebot.app/",
-  },
-  {
-    title: "Wrona",
-    description: "Robotics-focused technology company",
-    image: "/assets/wrona.jpeg",
-    href: "https://www.wrona.com/",
-  },
-  {
-    title: "This website",
-    description: "My personal website",
-    image: "/assets/portfolio.webm",
-    href: "https://github.com/iammadheshwaran",
-  },
+    title: "Netflix Clone",
+    description: "Built a Netflix-style streaming interface using React and TMDB API",
+    image: "/assets/netflix_clone.webm",
+    href: " ",
+  }
 ];
 
 const services = [
@@ -74,7 +56,7 @@ const services = [
     icon: Code2,
   },
   {
-    service: "UX Design",
+    service: "UI/UX Design",
     description:
       "Building intuitive, user-centric designs that drive engagement and conversion.",
     icon: Frame,
@@ -190,9 +172,9 @@ export default function Home() {
               data-scroll-speed=".09"
               className="flex flex-row items-center space-x-1.5"
             >
-              <span className={styles.pill}>next.js</span>
-              <span className={styles.pill}>tailwindcss</span>
-              <span className={styles.pill}>typescript</span>
+              <span className={styles.pill}>Python</span>
+              <span className={styles.pill}>React JS</span>
+              <span className={styles.pill}>User Experience</span>
             </div>
             <div>
               <h1
@@ -215,8 +197,7 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                An experienced full-stack website developer with a passion for
-                crafting unique digital experiences.
+                I focus on purposeful code, thoughtful design, and real user impact.
               </p>
             </div>
             <span
@@ -227,7 +208,7 @@ export default function Home() {
             >
               <Link href="mailto:iammadheshwaran@gmail.com" passHref>
                 <Button>
-                  Get in touch <ChevronRight className="ml-1 h-4 w-4" />
+                  Get in touch <ChevronRight className=" ml-1 h-4 w-4" />
                 </Button>
               </Link>
               <Button
@@ -265,25 +246,21 @@ export default function Home() {
           <div
             data-scroll
             data-scroll-speed=".4"
-            data-scroll-position="top"
+            data-scroll-position="top"  
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
-            <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-              I&apos;m an experienced full-stack developer proficient in{" "}
+            <h2 className="py-16  pb-2 text-2xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
+              I&apos;m a budding developer who loves building smart and user-friendly digital solutions. I enjoy using both tech skills and creative thinking to turn ideas into real, useful products that solve everyday problems.
+              <br/>  I use technologies like {" "}
               <Link
                 href="https://create.t3.gg/"
                 target="_blank"
                 className="underline"
-              >
-                TypeScript, Tailwind, and Next.js
+              >Python, ReactJS, Flutter, and MongoDB etc.,
               </Link>{" "}
-              since 2021. My experience spans from startups to mid-sized
-              companies, where I&apos;ve been instrumental in the entire product
-              design process; from ideation and wireframing, through
-              prototyping, to the delivery of the final product, all while
-              efficiently collaborating with cross-functional teams.
+              building projects that focus on clean design and good user experience. I enjoy learning new things, working on fun ideas, and growing by doing real, hands-on work.
             </h2>
-            <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
+            {/* <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
                 <div
                   key={stat.label}
@@ -297,7 +274,7 @@ export default function Home() {
                   </span>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -319,15 +296,14 @@ export default function Home() {
             </div>
           </div>
           <div data-scroll data-scroll-speed=".4" className="my-64">
-            <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
+            <span className="text-gradient clash-grotesk text-base font-semibold tracking-tighter">
               ✨ Projects
             </span>
             <h2 className="mt-3 text-4xl font-semibold tracking-tight tracking-tighter xl:text-6xl">
               Streamlined digital experiences.
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              I&apos;ve worked on a variety of projects, from small websites to
-              large-scale web applications. Here are some of my favorites:
+              I&apos;ve worked on a variety of projects. Here are some of my favorites:
             </p>
 
             {/* Carousel */}
@@ -417,7 +393,7 @@ export default function Home() {
                   key={service.service}
                   className="flex flex-col items-start rounded-md bg-white/5 p-14 shadow-md backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:bg-white/10 hover:shadow-md"
                 >
-                  <service.icon className="my-6 text-primary" size={20} />
+                  <service.icon className="my-6 text-primary" size={40} />
                   <span className="text-lg tracking-tight text-foreground">
                     {service.service}
                   </span>
@@ -447,7 +423,7 @@ export default function Home() {
               discussing new projects.
             </p>
             <Link href="mailto:iammadheshwaran@gmail.com" passHref>
-              <Button className="mt-6">Get in touch</Button>
+              <Button className="mt-6 text-lg">Get in touch</Button>
             </Link>
           </div>
         </section>
