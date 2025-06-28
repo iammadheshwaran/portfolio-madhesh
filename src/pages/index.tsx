@@ -179,7 +179,7 @@ export default function Home() {
 
         {/* Intro */}
         <section
-          id="Home"
+          id="home"
           data-scroll-section
           className="mt-40 flex w-full flex-col items-center xl:mt-0 xl:min-h-screen xl:flex-row xl:justify-between"
         >
