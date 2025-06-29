@@ -380,7 +380,7 @@ export default function Home() {
               <span className="text-gradient clash-grotesk">Professional</span> journey
             </h2>
             <span>
-              <Link href="https://drive.google.com/file/d/1-fn78wUBSbWAzdrmsW7-V1o-2hZzvQ9f/view?usp=drivesdk" passHref>
+              <Link href="https://tinyurl.com/MadheshwaranResume" passHref>
                 <Button className="mt-6 text-lg" >
                   Download Resume <DownloadIcon className=" ml-1 text-3xl " />
                 </Button>
