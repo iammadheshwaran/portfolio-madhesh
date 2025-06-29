@@ -367,7 +367,7 @@ export default function Home() {
         {/* Resume */}
 
         <section id="resume" data-scroll-section
-          className="min-h-screen flex items-center justify-center bg-black text-white">
+          className="min-h-screen flex items-center justify-center text-white">
 
           <div
             data-scroll
