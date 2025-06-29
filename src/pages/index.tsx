@@ -9,6 +9,9 @@ import {
   SearchCheck,
   Eye,
   MonitorSmartphone,
+  ChevronDownIcon,
+  DownloadCloudIcon,
+  DownloadIcon,
 } from "lucide-react";
 import { TriangleDownIcon } from "@radix-ui/react-icons";
 import Spline from "@splinetool/react-spline";
@@ -47,6 +50,10 @@ const projects = [
     href: " ",
   }
 ];
+
+const resume = [{
+
+}]
 
 const services = [
   {
@@ -246,12 +253,12 @@ export default function Home() {
           <div
             data-scroll
             data-scroll-speed=".4"
-            data-scroll-position="top"  
+            data-scroll-position="top"
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
             <h2 className="py-16  pb-2 text-2xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
               I&apos;m a budding developer who loves building smart and user-friendly digital solutions. I enjoy using both tech skills and creative thinking to turn ideas into real, useful products that solve everyday problems.
-              <br/>  I use technologies like {" "}
+              <br />  I use technologies like {" "}
               <Link
                 href="https://create.t3.gg/"
                 target="_blank"
@@ -356,6 +363,32 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Resume */}
+
+        <section id="resume" data-scroll-section
+          className="min-h-screen flex items-center justify-center bg-black text-white">
+
+          <div
+            data-scroll
+            data-scroll-enable-touch-speed
+            data-scroll-speed=".06"
+            className="flex flex-col items-center justify-center space-x-1.5 pt-6"
+          >
+            <h2 className="text-4xl font-medium tracking-tighter xl:text-6xl">
+              My {" "}
+              <span className="text-gradient clash-grotesk">Professional</span> journey
+            </h2>
+            <span>
+              <Link href="https://drive.google.com/file/d/1-fn78wUBSbWAzdrmsW7-V1o-2hZzvQ9f/view?usp=drivesdk" passHref>
+                <Button className="mt-6 text-lg" >
+                  Download Resume <DownloadIcon className=" ml-1 text-3xl " />
+                </Button>
+              </Link></span>
+          </div>
+
+        </section>
+
 
         {/* Services */}
         <section id="services" data-scroll-section>
