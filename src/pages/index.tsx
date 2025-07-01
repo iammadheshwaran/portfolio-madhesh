@@ -263,9 +263,9 @@ export default function Home() {
                 href="https://create.t3.gg/"
                 target="_blank"
                 className="underline"
-              >Python, ReactJS, Flutter, and MongoDB etc.,
+              >Python, ReactJS, Flutter, and MongoDB
               </Link>{" "}
-              building projects that focus on clean design and good user experience. I enjoy learning new things, working on fun ideas, and growing by doing real, hands-on work.
+              etc., building projects that focus on clean design and good user experience. I enjoy learning new things, working on fun ideas, and growing by doing real, hands-on work.
             </h2>
             {/* <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
