@@ -416,7 +416,7 @@ export default function Home() {
                     I got you.
                   </span>
                 </h2>
-                <p className="mt-2 tracking-tighter text-secondary-foreground">
+                <p className="text-lg mt-2 tracking-tighter text-secondary-foreground">
                   Here are some of the services I offer. If you have any
                   questions, feel free to reach out.
                 </p>
@@ -427,10 +427,10 @@ export default function Home() {
                   className="flex flex-col items-start rounded-md bg-white/5 p-14 shadow-md backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:bg-white/10 hover:shadow-md"
                 >
                   <service.icon className="my-6 text-primary" size={40} />
-                  <span className="text-lg tracking-tight text-foreground">
+                  <span className="text-2xl tracking-tight text-foreground">
                     {service.service}
                   </span>
-                  <span className="mt-2 tracking-tighter text-muted-foreground">
+                  <span className="text-lg mt-2 tracking-tighter text-muted-foreground">
                     {service.description}
                   </span>
                 </div>
