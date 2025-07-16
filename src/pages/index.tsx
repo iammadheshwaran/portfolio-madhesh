@@ -321,7 +321,7 @@ export default function Home() {
                     <CarouselItem key={project.title} className="md:basis-1/2">
                       <Card id="tilt">
                         <CardHeader className="p-0">
-                          <Link href={project.href} target="_blank" passHref>
+                          <Link href={project.href} target="_blankqq" passHref>
                             {project.image.endsWith(".webm") ? (
                               <video
                                 src={project.image}
