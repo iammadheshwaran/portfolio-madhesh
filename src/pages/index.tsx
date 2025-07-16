@@ -47,7 +47,7 @@ const projects = [
     title: "Netflix Clone",
     description: "Built a Netflix-style streaming interface using React and TMDB API",
     image: "/assets/netflix_clone.webm",
-    href: " ",
+    href: "https://netflix-clone-version.vercel.app/",
   }
 ];
 
